@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Wise Tech - Login & Signup</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Supabase JS SDK -->
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav-container">
+            <a href="index.html" class="logo">
+                <h1>Add<span>Wise</span>Tech</h1>
+            </a>
+            <div class="nav-links">
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Services</a>
+                <a href="#">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="auth-box">
+            <div class="toggle-buttons">
+                <button class="toggle-btn active" data-form="login">Login</button>
+                <button class="toggle-btn" data-form="signup">Sign Up</button>
+            </div>
+
+            <!-- Login Form -->
+            <form id="loginForm" class="auth-form active">
+                <h2>Welcome Back</h2>
+                <div class="input-group">
+                    <input type="email" id="loginEmail" required>
+                    <label for="loginEmail">Email</label>
+                </div>
+                <div class="input-group">
+                    <input type="password" id="loginPassword" required>
+                    <label for="loginPassword">Password</label>
+                </div>
+                <div class="remember-forgot">
+                    <label>
+                        <input type="checkbox"> Remember me
+                    </label>
+                    <a href="#">Forgot Password?</a>
+                </div>
+                <button type="submit">Login</button>
+                <div id="loginMessage" class="message"></div>
+                <div class="form-footer">
+                    <p>New to Add Wise Tech? <a href="#" class="switch-form" data-form="signup">Create an account</a></p>
+                </div>
+            </form>
+
+            <!-- Signup Form -->
+            <form id="signupForm" class="auth-form">
+                <h2>Create Account</h2>
+                <div class="input-group">
+                    <input type="email" id="signupEmail" required>
+                    <label for="signupEmail">Email</label>
+                </div>
+                <div class="input-group">
+                    <input type="password" id="signupPassword" required>
+                    <label for="signupPassword">Password</label>
+                </div>
+                <div class="input-group">
+                    <input type="password" id="confirmPassword" required>
+                    <label for="confirmPassword">Confirm Password</label>
+                </div>
+                <div class="terms">
+                    <label>
+                        <input type="checkbox" required> I agree to the <a href="#">Terms & Conditions</a>
+                    </label>
+                </div>
+                <button type="submit">Sign Up</button>
+                <div id="signupMessage" class="message"></div>
+                <div class="form-footer">
+                    <p>Already have an account? <a href="#" class="switch-form" data-form="login">Login here</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2024 Add Wise Tech. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 

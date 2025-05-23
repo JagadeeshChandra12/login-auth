@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Wise Tech - Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="dashboard.css">
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav-container">
+            <a href="index.html" class="logo">
+                <h1>Add<span>Wise</span>Tech</h1>
+            </a>
+            <div class="nav-links">
+                <a href="#" class="active">Dashboard</a>
+                <a href="#">Profile</a>
+                <a href="#">Settings</a>
+                <button id="logoutBtn" class="logout-btn">Logout</button>
+            </div>
+        </nav>
+    </header>
+
+    <div class="dashboard-container">
+        <div class="welcome-section">
+            <h2>Welcome, <span id="userEmail">User</span>!</h2>
+            <p class="last-login">Last login: <span id="lastLogin">Loading...</span></p>
+        </div>
+
+        <div class="dashboard-grid">
+            <div class="dashboard-card">
+                <h3>Quick Stats</h3>
+                <div class="stats">
+                    <div class="stat-item">
+                        <span class="stat-value">0</span>
+                        <span class="stat-label">Projects</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-value">0</span>
+                        <span class="stat-label">Tasks</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-value">0</span>
+                        <span class="stat-label">Messages</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dashboard-card">
+                <h3>Recent Activity</h3>
+                <div class="activity-list">
+                    <p class="no-activity">No recent activity</p>
+                </div>
+            </div>
+
+            <div class="dashboard-card">
+                <h3>Quick Actions</h3>
+                <div class="action-buttons">
+                    <button class="action-btn">New Project</button>
+                    <button class="action-btn">Add Task</button>
+                    <button class="action-btn">View Reports</button>
+                </div>
+            </div>
+
+            <div class="dashboard-card">
+                <h3>Profile Completion</h3>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 25%"></div>
+                </div>
+                <p class="completion-text">Complete your profile to unlock more features</p>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2024 Add Wise Tech. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="dashboard.js"></script>
+</body>
+</html> 

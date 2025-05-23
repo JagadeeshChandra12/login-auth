@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nigha Tech - Register</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav-container">
+            <a href="index.html" class="logo">
+                <h1>Nigha<span>Tech</span></h1>
+            </a>
+            <div class="nav-links">
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Services</a>
+                <a href="#">Contact</a>
+                <a href="index.html" class="login-btn">Login</a>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="login-box">
+            <h2>Create Account</h2>
+            <form id="registerForm">
+                <div class="input-group">
+                    <input type="text" id="fullname" required>
+                    <label for="fullname">Full Name</label>
+                </div>
+                <div class="input-group">
+                    <input type="email" id="email" required>
+                    <label for="email">Email</label>
+                </div>
+                <div class="input-group">
+                    <input type="password" id="password" required>
+                    <label for="password">Password</label>
+                </div>
+                <div class="input-group">
+                    <input type="password" id="confirmPassword" required>
+                    <label for="confirmPassword">Confirm Password</label>
+                </div>
+                <div class="terms">
+                    <label>
+                        <input type="checkbox" required> I agree to the <a href="#">Terms & Conditions</a>
+                    </label>
+                </div>
+                <button type="submit">Register</button>
+                <div class="register-link">
+                    <p>Already have an account? <a href="index.html">Login</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="register.js"></script>
+</body>
+</html> 

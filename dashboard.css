@@ -1,0 +1,145 @@
+.dashboard-container {
+    max-width: 1200px;
+    margin: 100px auto 40px;
+    padding: 0 20px;
+}
+
+.welcome-section {
+    background: var(--white);
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+}
+
+.welcome-section h2 {
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+.last-login {
+    color: var(--light-text);
+    font-size: 0.9rem;
+}
+
+.dashboard-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.dashboard-card {
+    background: var(--white);
+    padding: 1.5rem;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.dashboard-card h3 {
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+    font-size: 1.2rem;
+}
+
+.stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    text-align: center;
+}
+
+.stat-item {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.stat-value {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+.stat-label {
+    color: var(--light-text);
+    font-size: 0.9rem;
+}
+
+.activity-list {
+    min-height: 150px;
+}
+
+.no-activity {
+    color: var(--light-text);
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.action-buttons {
+    display: grid;
+    gap: 1rem;
+}
+
+.action-btn {
+    background: var(--primary-color);
+    color: var(--white);
+    border: none;
+    padding: 0.8rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.action-btn:hover {
+    background: var(--secondary-color);
+    transform: translateY(-2px);
+}
+
+.progress-bar {
+    background: #e0e0e0;
+    height: 8px;
+    border-radius: 4px;
+    overflow: hidden;
+    margin-bottom: 1rem;
+}
+
+.progress {
+    background: var(--primary-color);
+    height: 100%;
+    transition: width 0.3s ease;
+}
+
+.completion-text {
+    color: var(--light-text);
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+.logout-btn {
+    background: transparent;
+    color: var(--white);
+    border: 2px solid var(--white);
+    padding: 0.5rem 1.5rem;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.logout-btn:hover {
+    background: var(--white);
+    color: var(--primary-color);
+}
+
+@media (max-width: 768px) {
+    .dashboard-container {
+        margin-top: 80px;
+    }
+
+    .dashboard-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .stats {
+        grid-template-columns: repeat(3, 1fr);
+    }
+} 
